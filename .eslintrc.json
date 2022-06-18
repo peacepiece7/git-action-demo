@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "next/core-web-vitals", // 성능 측정 도구
+    "airbnb",
+    "airbnb-typescript"
+    // 'airbnb-typescript/base'
+  ]
+}
