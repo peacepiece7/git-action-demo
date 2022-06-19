@@ -1,18 +1,9 @@
-import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useQuery } from "react-query";
 
-import Banner from "@/components/Banner";
-import Menu from "@/components/Menu";
-import LectureGroup from "@/components/lecture/LectureGroup";
-
-const Home: NextPage = () => {
-  const { data, isLoading } = useQuery("lecture_list", () => fetch("http://localhost:3000/api/lectures").then((res) => res.json()));
-
-  console.log(data);
+const Detail: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,12 +12,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Menu></Menu>
-      <Banner></Banner>
+      <nav aria-label="fastcompus">fastcompus</nav>
+      <div role="banner"></div>
 
       <div title="lectureList">
         <h1>강의 목록</h1>
-        <LectureGroup></LectureGroup>
       </div>
 
       <footer className={styles.footer}>
@@ -41,4 +31,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Detail;

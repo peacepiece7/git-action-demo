@@ -4,6 +4,8 @@ https://github.com/vercel/next.js/issues/30731 참고
 
 `npm i next@canary`
 
+- window에서 docker를 만들 땐 canary 경로를 못찾는 에러가 남..
+
 ## .github workflow
 
 DEPLOY.yaml
