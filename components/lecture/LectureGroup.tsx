@@ -5,7 +5,9 @@ const LectureGroup = (): JSX.Element => {
   return (
     <div>
       <span>Best</span>
-      <h2>이번 주 베스트셀링 강의</h2>
+      <div role="heading" aria-level={1}>
+        이번 주 베스트셀링 강의
+      </div>
       <LectureList />
     </div>
   );
